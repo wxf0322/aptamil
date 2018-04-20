@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd"
+	version="2.1">
+
+	<entity class="com.clover.aptamil.service.entity.UserEntity"
+		name="UserEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="UserEntitySequenceGenerator" />
+				<sequence-generator name="UserEntitySequenceGenerator"
+					sequence-name="USMS_USERS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.ApplicationEntity"
+		name="ApplicationEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="ApplicationEntitySequenceGenerator" />
+				<sequence-generator name="ApplicationEntitySequenceGenerator"
+					sequence-name="USMS_APPLICATIONS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.PrivilegeEntity"
+		name="PrivilegeEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="PrivilegeEntitySequenceGenerator" />
+				<sequence-generator name="PrivilegeEntitySequenceGenerator"
+					sequence-name="USMS_PRIVILEGES_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.RoleEntity"
+		name="RoleEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="RoleEntitySequenceGenerator" />
+				<sequence-generator name="RoleEntitySequenceGenerator"
+					sequence-name="USMS_ROLES_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.OperationEntity"
+		name="OperationEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="OperationEntitySequenceGenerator" />
+				<sequence-generator name="OperationEntitySequenceGenerator"
+					sequence-name="USMS_OPERATIONS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.InstitutionEntity"
+		name="InstitutionEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="InstitutionEntitySequenceGenerator" />
+				<sequence-generator name="InstitutionEntitySequenceGenerator"
+					sequence-name="USMS_INSTITUTIONS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.GridEntity"
+		name="GridEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="GridEntitySequenceGenerator" />
+				<sequence-generator name="GridEntitySequenceGenerator"
+					sequence-name="GSMP_LOC_GRIDS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.GridTypeEntity"
+		name="GridTypeEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="GridTypeEntitySequenceGenerator" />
+				<sequence-generator name="GridTypeEntitySequenceGenerator"
+					sequence-name="GSMP_LOC_GRID_TYPES_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+	<entity class="com.clover.aptamil.service.entity.StaffEntity"
+		name="StaffEntity">
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<generated-value strategy="SEQUENCE"
+					generator="StaffEntitySequenceGenerator" />
+				<sequence-generator name="StaffEntitySequenceGenerator"
+					sequence-name="USMS_STAFFS_S" allocation-size="1" />
+			</id>
+		</attributes>
+	</entity>
+
+</entity-mappings>
+

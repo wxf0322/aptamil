@@ -1,0 +1,479 @@
+@charset "utf-8";
+html, ul, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, td, img, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style-type: none
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    -moz-outline-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #1259b1
+}
+
+/*输入框的背景*/
+.eui-login-bg {
+    background: url(../images/eui-login-bg.jpg) no-repeat center center fixed #055fb7;
+}
+
+.eui-login-box {
+    width: 600px;
+    margin: 0 0 0 -300px;
+    position: absolute;
+    top: 17%;
+    left: 50%
+}
+
+/*文字标题*/
+.eui-login-box h3 {
+    background: url(../images/eui-login-logo.png) no-repeat top center;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    height: 200px
+}
+
+.eui-login-input {
+    width: 325px;
+    height: 133px;
+    margin: 0 auto;
+    background: url(../images/eui-login-input.png) no-repeat center rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms
+}
+
+.eui-login-input:hover {
+    box-shadow: 0 0 5px #0357c2
+}
+
+.eui-login-input input {
+    margin: 0 0 0 70px;
+    padding: 0 5px;
+    height: 48px;
+    line-height: 48px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #fff;
+    width: 230px;
+    outline: none;
+}
+
+.eui-login-user, .eui-login-password {
+    position: relative;
+    height: 48px;
+    padding: 10px 0 9px
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+    -webkit-transition: color .5s;
+}
+
+input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder {
+    color: #fff;
+    -webkit-transition: color .5s;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    border: 1px solid #CCC !important;
+    height: 46px !important;
+    line-height: 46px !important;
+    border-radius: 8px;
+}
+
+.eui-login-bubble {
+    position: absolute;
+    left: 340px;
+    top: 12px;
+    height: 48px;
+}
+
+.eui-login-bubble i {
+    position: absolute;
+    top: 16px;
+    left: -9px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 10px solid #db8b0e
+}
+
+.eui-login-bubble span {
+    background: #db8b0e;
+    border-radius: 8px;
+    padding: 0 12px;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.eui-login-sub {
+    width: 325px;
+    height: 44px;
+    line-height: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 25px auto;
+    border-radius: 8px;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    text-align: center;
+    color: #055fba;
+    box-shadow: 0 4px 5px rgba(3, 94, 203, 0.23)
+}
+
+.eui-login-sub a {
+    display: block;
+    color: #055fba
+}
+
+.eui-login-sub:hover {
+    background: #fff
+}
+
+.eui-login-sub:active, .eui-login-sub a:active {
+    background: #055fba;
+    color: #fff
+}
+
+.eui-top {
+    height: 100px
+}
+
+.eui-nav-box {
+    background: url(../images/eui-top-nav.jpg) no-repeat right top #055fb7;
+    height: 100px;
+    position: relative
+}
+
+.eui-logo {
+    background: url(../images/eui-logo-bg.png) no-repeat left top;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    width: 867px;
+}
+
+.eui-logo img {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
+    margin: 2px 0 0 145px
+}
+
+.eui-nav {
+    position: absolute;
+    right: 0;
+    width: 914px;
+    height: 100px;
+}
+
+.eui-nav ul {
+    float: right;
+    padding: 55px 60px 0 0;
+}
+
+.eui-nav li {
+    border-bottom: 45px solid rgba(4, 5, 109, 0.7);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    height: 0;
+    width: 101px;
+    text-align: center;
+    float: left;
+    transition: all 0.5s;
+    line-height: 45px;
+    font-family: "微软雅黑";
+    font-size: 16px
+}
+
+.eui-nav li a {
+    color: #fff;
+    display: block
+}
+
+.eui-nav li:hover {
+    border-bottom: 45px solid rgba(4, 5, 109, 1)
+}
+
+.eui-nav li.on {
+    border-bottom: 45px solid rgba(255, 255, 255, 1)
+}
+
+.eui-nav li.on a {
+    color: #04066d;
+    line-height: 45px;
+    height: 45px
+}
+
+.eui-nav li i {
+    width: 24px;
+    height: 24px;
+    background: url(../images/home.png) no-repeat right center;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 6px
+}
+
+.eui-nav li.on i {
+    background-position: left center
+}
+
+.eui-sub-box {
+    height: 32px;
+    line-height: 32px;
+    background: -webkit-linear-gradient(90deg, #07d006 0%, #00b1f1 100%);
+    background: linear-gradient(90deg, #07d006 0%, #00b1f1 100%)
+}
+
+.eui-sub-nav {
+    float: left;
+}
+
+.eui-sub-nav li {
+    float: left;
+    width: 125px;
+    height: 32px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    overflow: hidden
+}
+
+.eui-sub-nav li a {
+    color: #fff;
+    display: block
+}
+
+.eui-sub-nav li a:hover {
+    color: #000;
+    background: #fff;
+    transition: all 0.2s;
+}
+
+.eui-user {
+    float: right;
+    color: #fff;
+    text-align: right;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    background: url(../images/eui-user-bg.png) no-repeat left top;
+    padding: 0 0 0 40px
+}
+
+.eui-user ul {
+    float: left
+}
+
+.eui-user .nLi h3 i {
+    background: url(../images/user.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 5px;
+    right: 6px;
+    display: inline-block
+}
+
+.eui-user .nLi h3 span {
+    padding: 0 8px;
+    min-width: 106px;
+    display: inline-block;
+    text-align: left
+}
+
+.eui-user .nLi {
+    position: relative;
+}
+
+.eui-user .nLi h3 {
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    font-weight: normal;
+    cursor: pointer;
+    float: right;
+    padding: 0 8px 0 0;
+    margin: 0 !important;
+    font-size: 16px !important
+}
+
+.eui-user .nLi h3 a {
+    color: #fff
+}
+
+.eui-user .sub {
+    display: none;
+    top: 32px;
+    right: 0;
+    position: absolute;
+    line-height: 26px;
+    padding: 8px;
+    border-top: 0 none;
+    z-index: 999;
+    background: rgba(1, 152, 223, 0.8);
+}
+
+.eui-user .sub ul {
+    overflow: hidden
+}
+
+.eui-user .sub li {
+    zoom: 1
+}
+
+.eui-user .sub a {
+    display: block;
+    white-space: pre;
+    color: #fff;
+    text-align: center;
+    padding: 0 50px;
+    height: 32px;
+    line-height: 32px
+}
+
+.eui-user .sub a:hover,
+.eui-user .sub a:active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff
+}
+
+.eui-user .exit {
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    width: 60px;
+    text-align: center;
+    height: 32px
+}
+
+.eui-user .exit img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 4px auto
+}
+
+.eui-user .exit:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.2s;
+}
+
+.content-tabs {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: none !important
+}
+
+.borderGB {
+    height: 2px;
+    font-size: 0;
+    background: -webkit-linear-gradient(90deg, #07d006 0%, #00b1f1 100%);
+    background: linear-gradient(90deg, #07d006 0%, #00b1f1 100%)
+}
+
+.page-tabs a.active {
+    background: #00b1f1 !important;
+    color: #fff !important
+}
+
+.page-tabs a:hover i {
+    color: #00b1f1 !important
+}
+
+.page-tabs a.active i, .page-tabs .active:hover i {
+    color: #fff !important
+}
+
+.eui-top-setting {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/ptgrid_setting.png') no-repeat;
+    outline: none;
+}
+
+.eui-top-setting:hover {
+    opacity: 0.8;
+}
+
+.eui-top-setting:focus {
+    outline: none;
+}
+
+.eui-top-loginout {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/zx.png') no-repeat;
+    outline: none;
+}
+
+.eui-top-loginout:hover {
+    opacity: 0.8;
+}
+
+.eui-top-loginout:focus {
+    outline: none;
+}
+
+.eui-top-test {
+    display: block;
+    position: absolute;
+    right: 90px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/zx.png') no-repeat;
+    outline: none;
+}
+
+.eui-top-test:hover {
+    opacity: 0.8;
+}
+
+.eui-top-test:focus {
+    outline: none;
+}
